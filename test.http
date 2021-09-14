@@ -1,0 +1,23 @@
+//test.http
+
+// test rest API by VS code via "rest client"
+
+@baseUrl = http://localhost:3000
+
+# @name = getAllCategories     
+GET {{baseUrl}}/categories
+
+###
+
+# @name = addNewCategori
+POST http://localhost:3000/categories?
+Content-Type: application/json
+
+{
+    "title": "life",
+    "author": "thunguyen"
+}
+
+###
+# @name = searchCategori
+GET http://localhost:3000/categories?_page=1&_limit=2

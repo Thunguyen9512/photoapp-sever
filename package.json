@@ -1,0 +1,25 @@
+{
+  "name": "jsonseverdemo",
+  "version": "1.0.0",
+  "description": "demo json server",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon main.js",
+    "start": " node generateRandomData.js && node main.js",
+    "generateData": "node generateRandomData.js"
+  },
+  "keywords": [
+    "json-server"
+  ],
+  "author": "Thu Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "git": "^0.1.5",
+    "json-server": "^0.16.3"
+  },
+  "devDependencies": {
+    "faker": "^5.5.3",
+    "nodemon": "^2.0.12"
+  }
+}
