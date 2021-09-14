@@ -1,39 +1,29 @@
 {
   "categories": [
     {
-      "id": "3566899b-adc8-4415-b7d2-b3a9e324ed2e",
-      "title": "Customer Identity Administrator",
+      "id": "75dc5d9c-1c3c-4773-ac1b-bcba8f10d9b3",
+      "title": "Customer Group Planner",
       "author": ""
     },
     {
-      "id": "e15f91db-a775-4009-886b-23d41b33ede8",
-      "title": "Central Assurance Coordinator",
+      "id": "5fb2b199-c6cb-4f18-a2f8-bc6e8dcc1ced",
+      "title": "Global Applications Producer",
       "author": ""
     },
     {
-      "id": "420ca827-7fdf-4da8-acb5-3251654ae61e",
-      "title": "Global Applications Planner",
+      "id": "6ae9579c-f7f8-426c-9b22-3f6655d5f1b0",
+      "title": "Product Program Orchestrator",
       "author": ""
     },
     {
-      "id": "7476774d-19ea-416a-92e9-72792f40fca4",
-      "title": "Lead Web Consultant",
+      "id": "3543a47b-efc9-4d60-855f-459616795c6f",
+      "title": "Internal Quality Associate",
       "author": ""
     },
     {
-      "id": "1df0a917-e6f0-4a31-abfb-277ba0a12c92",
-      "title": "National Mobility Designer",
+      "id": "d4e11a07-13db-4a8b-b4ec-b112533b02fe",
+      "title": "National Tactics Planner",
       "author": ""
-    },
-    {
-      "title": "life",
-      "author": "thunguyen",
-      "id": "56FiYOM"
-    },
-    {
-      "title": "life",
-      "author": "thunguyen",
-      "id": "XwU563K"
     }
   ]
 }
