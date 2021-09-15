@@ -1,8 +1,7 @@
 /* main.js */
-import { v4 as uuidv4 } from "uuid";
-
 
 const jsonServer = require('json-server')
+
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
@@ -22,8 +21,8 @@ server.use((req, res, next) => {
   if (req.method === 'POST') {
     req.body.createdAt = Date.now()
     req.body.updatedAt = Date.now()
-    req.body.id = uuidv4()
-  }
+    //json server will create id automatically
+    }
   // Continue to JSON Server router
   next()
 })
