@@ -1,4 +1,6 @@
 /* main.js */
+import { v4 as uuidv4 } from "uuid";
+
 
 const jsonServer = require('json-server')
 const server = jsonServer.create()
@@ -20,12 +22,14 @@ server.use((req, res, next) => {
   if (req.method === 'POST') {
     req.body.createdAt = Date.now()
     req.body.updatedAt = Date.now()
+    req.body.id = uuidv4()
   }
   // Continue to JSON Server router
   next()
 })
  
 // Use default router
+// the environtment variable for heroku
 const PORT = process.env.PORT || 3000;
 server.use(router)
 server.listen(PORT, () => {
