@@ -1,7 +1,7 @@
 /* main.js */
 
 const jsonServer = require('json-server')
-const { uuid } = require('uuidv4')
+//const { uuid } = require('uuidv4')
 
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
@@ -22,7 +22,7 @@ server.use((req, res, next) => {
   if (req.method === 'POST') {
     req.body.createdAt = Date.now()
     req.body.updatedAt = Date.now()
-    req.body.id = uuid()
+    //req.body.id = uuid()
     //json server will create id automatically if no id
     }
   // Continue to JSON Server router
