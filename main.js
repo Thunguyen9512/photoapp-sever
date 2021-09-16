@@ -1,6 +1,7 @@
 /* main.js */
 
 const jsonServer = require('json-server')
+const { uuid } = require('uuidv4')
 
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
@@ -21,7 +22,8 @@ server.use((req, res, next) => {
   if (req.method === 'POST') {
     req.body.createdAt = Date.now()
     req.body.updatedAt = Date.now()
-    //json server will create id automatically
+    req.body.id = uuid()
+    //json server will create id automatically if no id
     }
   // Continue to JSON Server router
   next()
@@ -29,7 +31,7 @@ server.use((req, res, next) => {
  
 // Use default router
 // the environtment variable for heroku
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 server.use(router)
 server.listen(PORT, () => {
   console.log('JSON Server is running')
